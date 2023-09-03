@@ -226,8 +226,8 @@ main {
 
 
 .button {
-    width: 18%;
-    height: 35px;
+    width: 20vw;
+    height: 40px;
     display: flex;
     margin: 0 auto;
     align-content: center;
@@ -248,7 +248,7 @@ main {
     text-decoration: none;
     color: #dfeceb;
     font-family: verdana;
-    font-size:2em;
+    font-size:clac(1.5em, 1vw);
 }
 
 .topic {
