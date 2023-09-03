@@ -84,7 +84,7 @@ main {
 
 .presentation {
     width: 95vw;
-    height: 75vh;
+    height: 70vh;
     margin-top: 10px;
     margin-bottom: 0;
     padding-top: 20px;
@@ -330,6 +330,7 @@ footer {
     text-align: center;
     margin: 10px auto;
     font-family: verdana;
+    font-size: calc(1.5em, 1vw) ;
 
 }
 
