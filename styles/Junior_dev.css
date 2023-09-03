@@ -226,12 +226,19 @@ main {
 
 
 .button {
-    width: 15%;
+    width: 18%;
     height: 35px;
     display: flex;
     margin: 0 auto;
     align-content: center;
     justify-content: center;
+    background: transparent;
+    box-shadow: none;
+    border: 2px solid #6899a0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .button a {
@@ -239,8 +246,8 @@ main {
     justify-content: center;
     margin: auto;
     text-decoration: none;
-    color: #2F4F4F;
-    font-family: sans-serif;
+    color: #dfeceb;
+    font-family: verdana;
 }
 
 .topic {
@@ -286,9 +293,7 @@ main {
 
 }
 
-.photo-cards .sec-p,
-.disc-head .sec-p,
-.topic .sec-p {
+.sec-p{
     width: 80%;
     margin: 0 auto;
     padding: 10px 10px 0 10px;
@@ -296,7 +301,7 @@ main {
     text-align: center;
     justify-content: center;
     font-size: clac(0.2em + 1vw);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     font-weight: 100;
 }
 
