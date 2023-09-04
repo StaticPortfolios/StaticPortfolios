@@ -10,11 +10,12 @@
 }
 
 
+
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg);
-    background-size:cover;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url(../images/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg);
+    background-size: contain;
     background-repeat: repeat-y;
 }
 
@@ -30,8 +31,9 @@ body {
 
 .header>h1 {
     margin: 0 auto;
+    margin-right:330px;
     color: whitesmoke;
-    font-size: 2.1em;
+    font-size:calc(1.9em + 1vw);
     text-align: center;
     justify-content: center;
 }
@@ -56,10 +58,10 @@ body {
 }
 
 /* this is for a java script to make header sticky while scrolling */
-.sticky{
-    position:fixed;
-    top:0;
-    width:100%;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 3;
     backdrop-filter: blur(60%);
 }
@@ -67,18 +69,181 @@ body {
 /* end of sticky code */
 
 /* start of the link tree section */
+/* The commented out section of the .link-tree ellement. i do not see an importance of this code right now */
+/* #link-tree {
+    width: 95vw;
+    height:fit-content;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: auto;
+    color: whitesmoke;
+    justify-content: center;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #2F4F4F;
+    backdrop-filter: blur(30px);
+} */
 
-.presentation {
-    width:70vw;
-    max-height: fit-content;
-    background-color: cornflowerblue;
-    align-items: center;
-    margin: 0 auto;
-    margin-top:20px;
-    padding:10px;
+#link-tree {
+
+    width: 95vw;
+    height:fit-content;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: auto;
+    color: whitesmoke;
+    justify-content: center;
+    position: relative;
+
 }
 
-.presentation > h3 {
+.presentation {
+    height:auto;
+    width: 70vw;
+    background-image:linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url('../images/this-is-moon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    border: 1px solid #A2AAAD;
+    border-radius: 3%;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .presentation {
+        max-width: 40vw;
+    }
+}
+
+.presentation>h3 {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 40px;
     text-align: center;
-    margin:0 auto;
+    font-size: calc(1.2em + 1vh);
+    font-family: sans-serif;
+    color: whitesmoke
+}
+
+.pres-box {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.ref-box {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    border: none;
+    box-shadow: #A2AAAD;
+    border-radius: 10%;
+}
+
+.boxes {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    font-size: calc(1.1em + 1vw);
+    color: whitesmoke;
+}
+
+.content {
+    width: 26%;
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 1px solid #267569;
+    border-radius: 10px;
+}
+
+.content a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: calc(0.5em + 1vw);
+    font-family: sans-serif;
+}
+
+@media (min-width:768px){
+    .content a {
+        font-size: calc(0.2em + 1vw);
+    }
+}
+
+.separetor {
+    display: flex;
+    margin: 30px auto;
+    width: 60%;
+    border: 1px solid #122111;
+}
+
+.i-name {
+    color: whitesmoke;
+    font-size: calc(0.7em + 1vw);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.youtube {
+    color: #c4302b;
+}
+
+.spotify {
+    color: #1db954;
+}
+
+.sound-cloud {
+    color: #ff7700;
+}
+
+.apple {
+    color: #A2AAAD;
+}
+
+.amazon {
+    color: #ff9900;
+}
+
+/* the footer */
+
+footer {
+    background-color: #267569;
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.foot-address {
+    text-align: center;
+    margin: 10px auto;
+    font-family: verdana;
+    font-size: calc(1.5em, 1vw);
+
+}
+
+.foot-address a {
+    text-decoration: none;
+}
+
+.icon {
+    text-decoration: none;
+    color: whitesmoke;
 }
